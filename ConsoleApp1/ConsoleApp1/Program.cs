@@ -11,9 +11,9 @@ namespace ConsoleApp1
             int timeForPeople = 10;
             int waitTime = people * timeForPeople;
             int minutesInHour = 60;
-            int hours = waitTime / minutesInHour;
-            int minutes = waitTime % minutesInHour;
-            Console.WriteLine($"вам осталось ждать {hours} часов и {minutes} минут");
+            int waitHours = waitTime / minutesInHour;
+            int waitMinutes = waitTime % minutesInHour;
+            Console.WriteLine($"вам осталось ждать {waitHours} часов и {waitMinutes} минут");
         }
     }
 }
